@@ -7,7 +7,7 @@ date:   2021-07-22 11:00:00 +0800
 #目录配置
 categories: JavaWeb
 #标签配置
-tag: 教程
+tag: 笔记
 ---
 
 * content
