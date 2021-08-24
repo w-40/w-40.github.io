@@ -1,4 +1,4 @@
-```
+---
 layout: post
 #标题配置
 title:  第一次实训(HTML+CSS+JS)
@@ -8,7 +8,10 @@ date:   2021-07-22 11:00:00 +0800
 categories: document
 #标签配置
 tag: 教程
-```
+---
+
+* content
+{:toc}
 
 
 
