@@ -1,194 +1,45 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
 
-  <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title> - Wang Zhikai's blog</title>
-
-	<link rel="shortcut icon" href="/styles/images/favicon.jpg">
-	<link rel="icon" href="/styles/images/favicon.jpg">
-
-	<link rel="stylesheet" href="/styles/css/index.css">
-	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/styles/css/syntax.css">
-	<link rel="canonical" href="/">
-	<link rel="alternate" type="application/rss+xml" title="Wang Zhikai's blog" href="/feed.xml">
-	
-	<meta name="keywords" content=", Wang Zhikai's blog, 王志凯;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
-	<meta name="description" content="王志凯;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休">
-
-	<script src="/styles/js/jquery.min.js"></script>
-	<!--[if lt IE 9]>
-    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  	<![endif]-->
-  	<script>
-		var _hmt = _hmt || [];
-		(function() {
-		  var hm = document.createElement("script");
-		  hm.src = "//hm.baidu.com/hm.js?c194e0021d0babc93cd1cef1d94b1134";
-		  var s = document.getElementsByTagName("script")[0]; 
-		  s.parentNode.insertBefore(hm, s);
-		})();
-	</script>
-  	<style type="text/css">
-	  	.docs-content{
-	  		margin-bottom: 10px;
-	  	}
-  	</style>
-</head>
-
-  <body class="index">
-
-    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
-  <div class="container">
-    <div class="navbar-header">
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="/" class="navbar-brand">
-        <img src="/styles/images/logo.jpg">
-      </a>
-    </div>
-    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-      <ul class="nav navbar-nav">    
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/categories/">大类划分</a>
-        </li>
-        <li>
-          <a href="/tag">标签</a>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-            <a><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a rel="nofollow" target="_blank" href="https://github.com/w-40">Github</a></li>
-            <li><a rel="nofollow" href="/books">我的书单</a></li>
-            <li class="divider"></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-    <div class="docs-header" id="content">
-  <div class="container">
-  	
-	    <h1>Wang Zhikai's blog</h1>
-	    <p>中北大学软件学院的一名小渣渣</p>
-    
-  </div>
-</div>
-    
-
-     <div class="container docs-container">
+ <div class="container docs-container">
       <div class="row">
         <div class="col-md-3">
           <div class="sidebar hidden-print" role="complementary">
             <div id="navigation">
               <h1>目录</h1>
               <ul class="nav sidenav">
-                
-                  
-                  
-                  
-                  
-                  
-                    <li><a href="#year_2021">2021</a>
+                {% for post in site.posts  %}
+                  {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+                  {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
+                  {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+                  {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
+                  {% if forloop.first %}
+                    <li><a href="#year_{{this_year}}">{{this_year}}</a>
                       <ul class="nav">
-                        <li><a href="#month_2021_August">August</a></li>
-                  
-                  
-                        
-                      
-                          <li><a href="#month_2021_July">July</a></li>
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
-                  
-                  
-                        
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
-                  
-                  
-                        
-                      
-                          <li><a href="#month_2021_July">July</a></li>
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
-                  
-                  
-                        
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
-                  
-                  
-                        
-                      
-                          <li><a href="#month_2021_August">August</a></li>
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
-                  
-                  
-                        
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
-                  
-                  
+                        <li><a href="#month_{{this_year}}_{{this_month}}">{{this_month}}</a></li>
+                  {% endif %}
+                  {% if forloop.last %}
                         </ul>
                       </li>
-                  
-                
+                  {% else %}
+                    {% if this_year != next_year %}
+                        </ul>
+                      </li>
+                      <li><a href="#year_{{next_year}}">{{next_year}}</a>
+                        <ul class="nav">
+                          <li><a href="#month_{{next_year}}_{{next_month}}">{{next_month}}</a></li>
+                    {% else %}    
+                      {% if this_month != next_month %}
+                          <li><a href="#month_{{next_year}}_{{next_month}}">{{next_month}}</a></li>
+                      {% endif %}
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
               </ul>
               <div style="height: 200px;width: 200px;">
                 
-                <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
+                <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i={{ site.revolvermaps }}&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
                 </script>
               </div>
             </div>
@@ -198,154 +49,41 @@
           <div class="panel docs-content">
             <div class="wrapper">
               <div class="home">
-                
-                  
-                  
-                  
-                  
+                {% for post in site.posts  %}
+                  {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+                  {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
+                  {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+                  {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
 
-                  
-                    <h1 id="year_2021">2021</h1>
-                    <h2 id="month_2021_August">August</h2>
+                  {% if forloop.first %}
+                    <h1 id="year_{{this_year}}">{{this_year}}</h1>
+                    <h2 id="month_{{this_year}}_{{this_month}}">{{this_month}}</h2>
                     <ul>
-                  
+                  {% endif %}
 
                   <ol class="breadcrumb">
-                   <li><span>August 24, 2021</span> &raquo; <a href="/2021/08/24/2021-07-08-Git%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/"></a></li>
+                   <li><span>{{ post.date | date: "%B %e, %Y" }}</span> &raquo; <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
                   </ol>
-                  
-                        
-                      
-                        </ul>
-                        <h2 id="month_2021_July">July</h2>
-                        <ul>
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
-
-                  
-
-                  <ol class="breadcrumb">
-                   <li><span>August 23, 2021</span> &raquo; <a href="/2021/08/23/Nginx%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE/">Nginx安装与部署项目</a></li>
-                  </ol>
-                  
-                        
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
-
-                  
-
-                  <ol class="breadcrumb">
-                   <li><span>August 19, 2021</span> &raquo; <a href="/2021/08/19/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">Linux常用命令</a></li>
-                  </ol>
-                  
-                        
-                      
-                        </ul>
-                        <h2 id="month_2021_July">July</h2>
-                        <ul>
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
-
-                  
-
-                  <ol class="breadcrumb">
-                   <li><span>July 24, 2021</span> &raquo; <a href="/2021/07/24/IO%E6%B5%81%E5%92%8CStream%E6%B5%81/">Java中的IO流和Stream流</a></li>
-                  </ol>
-                  
-                        
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
-
-                  
-
-                  <ol class="breadcrumb">
-                   <li><span>July 22, 2021</span> &raquo; <a href="/2021/07/22/%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AE%9E%E8%AE%AD(HTML+CSS+JS)/">第一次实训(HTML+CSS+JS)</a></li>
-                  </ol>
-                  
-                        
-                      
-                        </ul>
-                        <h2 id="month_2021_August">August</h2>
-                        <ul>
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
-
-                  
-
-                  <ol class="breadcrumb">
-                   <li><span>July  7, 2021</span> &raquo; <a href="/2021/07/07/%E9%9B%86%E5%90%88%E4%BB%A5%E5%8F%8A%E9%9B%86%E5%90%88%E7%9A%84%E5%90%84%E7%A7%8D%E6%96%B9%E6%B3%95/">Java中的集合</a></li>
-                  </ol>
-                  
-                        
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
-
-                  
-
-                  <ol class="breadcrumb">
-                   <li><span>July  5, 2021</span> &raquo; <a href="/2021/07/05/String%E4%B8%8EStringBuilder/">Java中的String与StringBuilder</a></li>
-                  </ol>
-                  
+                  {% if forloop.last %}
                     </ul>
-                  
-                
+                  {% else %}
+                    {% if this_year != next_year %}
+                      </ul>
+                      <h1 id="year_{{next_year}}">{{next_year}}</h1>
+                      <h2 id="month_{{next_year}}_{{next_month}}">{{next_month}}</h2>
+                      <ul>
+                    <!--{% else %}
+                      {% if this_month != next_month %}
+                        </ul>
+                        <h2 id="month_{{next_year}}_{{next_month}}">{{next_month}}</h2>
+                        <ul>-->
+                      {% endif %}
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    
-    <footer class="footer" role="contentinfo">
-	<div class="container">
-		<p class="copyright">Copyright &copy; 2021-2021 <a href="https://w-40.github.io/"><code>王志凯</code></a>.</p>
-		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="http://www.hifreud.com/">Freud Kang</a></p>
-	</div>
-</footer>
-
-<script src="/styles/js/jquery.min.js"></script>
-<script src="/styles/js/bootstrap.min.js"></script>
-<script src="/styles/js/holder.min.js"></script>
-<script src="/styles/js/lessismore.js"></script>
-<script src="/styles/js/application.js"></script>
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-  </body>
-</html>
