@@ -7,7 +7,7 @@ date:   2021-07-22 11:00:00 +0800
 #目录配置
 categories: JavaWeb
 #标签配置
-tag: HTML,CSS,JS
+tag: 学习笔记
 ---
 
 * content
