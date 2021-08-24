@@ -5,7 +5,7 @@ title:  第一次实训(HTML+CSS+JS)
 #时间配置
 date:   2021-07-22 11:00:00 +0800
 #目录配置
-categories: document
+categories: JavaWeb
 #标签配置
 tag: 教程
 ---
