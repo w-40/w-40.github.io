@@ -1,5 +1,5 @@
 # Site settings
-name: Wang Zhikai's blog
+name: 王志凯的小博客
 email: 2568441388@qq.com
 author: 王志凯
 url: https://w-40.github.io/
@@ -9,7 +9,7 @@ baseurl: ""
 description: 中北大学软件学院的一名小渣渣
 meta_description: 王志凯;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休
 motto: It's our wits that make us men.
-banner: 要么做第一个，要么做最好的一个
+banner: 学而不思则罔，思而不学则殆。
 
 #permalink: /:categories/:year/:month/:day/:title/
 permalink: /:year/:month/:day/:title/
