@@ -15,7 +15,8 @@ permalink: /aboutauthor/
 项目经历
 -----------------------------------------------------------------
 参考：
-Gitee：https://gitee.com/wzj188/nuc202007/tree/master/4%E7%8F%AD/2013040431%E7%8E%8B%E5%BF%97%E5%87%AF
+
+Gitee：https://gitee.com/wang-zk
 Github：https://github.com/w-40
 
 
