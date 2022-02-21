@@ -51,7 +51,7 @@ Spring是分层的JavaSE/EE应用full-stack（一站式）轻量级开源框架
 
 ### 4.Spring的体系结构
 
-![1](Spring图片/1.png)
+![1](https://github.com/w-40/w-40.github.io/blob/main/_posts/Spring%E5%9B%BE%E7%89%87/1.png)
 
 ### 5.Spring的发展历史
 
