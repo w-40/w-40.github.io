@@ -90,7 +90,7 @@ rs.close( ) ;
 
 - 内聚（Cohesion）：代码书写过程中单个模块内部各组成部分间的联系，用于衡量软件中各个功能模块内部的功能联系
 
-![3](https://img-blog.csdnimg.cn/41face35de3d4f53bc66c551e1768bd1.png)
+![3](https://img-blog.csdnimg.cn/e0afa5528f0e41eb881d6f81ef1c0f52.png)
 
 - 程序书写的目标：高内聚，低耦合
   - 就是同一个模块内的各个元素之间要高度紧密，但是各个模块之间的相互依存度却不要那么紧密
@@ -99,13 +99,13 @@ rs.close( ) ;
 
 ![4](https://img-blog.csdnimg.cn/2d908f4cfef249e7873ad5e3b2a8a583.png)
 
-![5](Spring图片\5.png)
+![5](https://img-blog.csdnimg.cn/b178cd6f5e1e401a9e2a0177e8cefa85.png)
 
-![6](Spring图片\6.png)
+![6](https://img-blog.csdnimg.cn/6a7c54c8595f4182bb68a48a1c2e0e15.png)
 
 ### 4.Spring发展历程
 
-![7](Spring图片\7.png)
+![7](https://img-blog.csdnimg.cn/36cedd3b1e0a4b129d8287f75b71dc1f.png)
 
 ### 5.IoC
 
@@ -113,7 +113,7 @@ rs.close( ) ;
 
 - Spring控制的资源全部放置在Spring容器中，该容器称为IoC容器
 
-  ![8](Spring图片\8.png)
+  ![8](https://img-blog.csdnimg.cn/41face35de3d4f53bc66c551e1768bd1.png)
 
 
 
@@ -141,7 +141,7 @@ rs.close( ) ;
 
 5.表现层（App）通过spring获取资源（Service实例）
 
-![9](Spring图片\9.png)
+![9](https://img-blog.csdnimg.cn/6c747e2e94484da8a3e1297de5a46071.png)
 
 #### 2.1 IoC入门案例制作步骤-1
 
@@ -347,7 +347,7 @@ public class UserApp {
 - IoC（Inversion Of Control）控制翻转，Spring反向控制应用程序所需要使用的外部资源
 - DI（Dependency Injection）依赖注入，应用程序运行依赖的资源由Spring为其提供，资源进入应用程序的方式称为注入
 
-![10](Spring图片\10.png)
+![10](https://img-blog.csdnimg.cn/8f79919f81ca4f7ab8fe572b49ef3deb.png)
 
 IoC与DI的关系
 
@@ -359,7 +359,7 @@ IoC与DI的关系
 
 - 
 
-  ![11](Spring图片\11.png)
+  ![11](https://img-blog.csdnimg.cn/18fb8733717c4b39ab6d4e24a9545bd8.png)
 
 ### 6.set注入（主流）
 
@@ -684,7 +684,7 @@ IoC与DI的关系
 
 可以加载文件系统中任意位置的配置文件，而ClassPathXmlApplicationContext只能加载类路径下的配置文件
 
-![12](Spring图片\12.png)
+![12](https://img-blog.csdnimg.cn/8d722b2f2c65466e901ff6b478a9b381.png)
 
 **BeanFactory**
 
@@ -840,7 +840,7 @@ spring环境
 
 注解启动时使用注解的形式替代xml配置，将繁杂的spring配置文件从工程中彻底消除掉，简化书写
 
-![13](Spring图片\13.png)
+![13](https://img-blog.csdnimg.cn/99965492da6642558f80fe3fd39baca6.png)
 
 #### 1.2 注解驱动的弊端
 
@@ -848,7 +848,7 @@ spring环境
 
 - XML中配置第三方开发的资源是很方便的，但使用注解驱动无法在第三方开发的资源中进行编辑，因此会增大开发工作量
 
-![14](Spring图片\14.png)
+![14](https://img-blog.csdnimg.cn/04ae171ffb0944c3988f280ddd4d5f8e.png)
 
 ### 2.常用注解
 
@@ -1242,7 +1242,7 @@ spring环境
 
 ### 1.综合案例改版（注解整合MyBatis）
 
-![15](Spring图片\15.png)
+![15](https://img-blog.csdnimg.cn/d74950376881422b86a5ceded4c3437f.png)
 
 ### 2.注解整合MyBatis分析
 
@@ -1306,13 +1306,13 @@ public class UserServiceTest {
 
 ### 1.IoC核心接口
 
-![16](Spring图片\16.png)
+![16](https://img-blog.csdnimg.cn/7085ddb22a894dceb1115f99912bf497.png)
 
 ### **2.组件扫描器**
 
 - 开发过程中，需要根据需求加载必要的bean，排除指定bean
 
-![17](Spring图片\17.png)
+![17](https://img-blog.csdnimg.cn/69cc4c04d8ed451187dfc916700eebc4.png)
 
 ### **3.设定组件扫描加载过滤器**
 
@@ -1431,7 +1431,7 @@ public class UserServiceTest {
 
 ### 7.bean初始化过程解析
 
-![18](Spring图片\18.png)
+![18](https://img-blog.csdnimg.cn/34d0c69ccb444a4695843b5a27ff4a43.png)
 
 ### 8.bean初始化过程解析
 
@@ -1457,7 +1457,7 @@ public class UserServiceTest {
 
 ### 9.bean初始化过程解析
 
-![19](Spring图片\19.png)
+![19](https://img-blog.csdnimg.cn/b9fad2f5d7a543f0b5f45b631ef81572.png)
 
 ### 10.繁琐的bean初始化过程处理
 
@@ -1476,11 +1476,11 @@ public class UserServiceTest {
 
 #### 1.1 OOP开发思路
 
-![20](Spring图片\20.png)
+![20](https://img-blog.csdnimg.cn/1b35f25ccee3466db12eebeb9cc5789f.png)
 
 #### 1.2 AOP开发思想
 
-![21](Spring图片\21.png)
+![21](https://img-blog.csdnimg.cn/5b27c5add6774cfdb675d9292f0e2762.png)
 
 #### 1.3 AOP概念
 
@@ -1510,17 +1510,17 @@ public class UserServiceTest {
 
 - 业务功能扩展更便捷
 
-![22](Spring图片\22.png)
+![22](https://img-blog.csdnimg.cn/0cabfbf089814f5b97e675f751533765.png)
 
 ### 2.AOP入门案例
 
 #### 2.1 AOP相关概念
 
-![23](Spring图片\23.png)
+![23](https://img-blog.csdnimg.cn/7d2f8edbbcea49a68f599b6940ab23dd.png)
 
-![24](Spring图片\24.png)
+![24](https://img-blog.csdnimg.cn/2e02a0643e414a0aafe18b077090387c.png)
 
-![25](Spring图片\25.png)
+![25](https://img-blog.csdnimg.cn/92ce4ec432b94fcbaa86fe4dbae386a0.png)
 
 - Joinpoint(连接点)：就是方法
 
@@ -1592,11 +1592,11 @@ public class UserServiceTest {
 
 步骤二 在业务层抽取通用代码
 
-![26](Spring图片\26.png)
+![26](https://img-blog.csdnimg.cn/2506b9dd4bad45078d82935e933dcd4b.png)
 
 步骤三 把通知加入spring容器管理
 
-![27](Spring图片\27.png)
+![27](https://img-blog.csdnimg.cn/dafb0109c42c49f0bfbd0cb093345e09.png)
 
 
 
@@ -2070,7 +2070,7 @@ AOP的通知类型共5种
 
 - 原始方法
 
-![28](Spring图片\28.png)
+![28](https://img-blog.csdnimg.cn/ed8f1e2c756c4e0190ebdc8b6ebb5d80.png)
 
 第三种情况
 
@@ -2078,7 +2078,7 @@ AOP的通知类型共5种
 
 - 原始方法
 
-![29](Spring图片\29.png)
+![29](https://img-blog.csdnimg.cn/d921182df2e5475faf78f1b82adc17c8.png)
 
 ##### **3.9.2 通知获取返回值数据**
 
@@ -2218,7 +2218,7 @@ AOP的通知类型共5种
 
 #### 4.1 AOP配置
 
-![30](Spring图片\30.png)
+![30](https://img-blog.csdnimg.cn/42eaea209f534dabbcab473b68b0218c.png)
 
 #### 4.2 注解开发AOP制作步骤
 
@@ -2244,7 +2244,7 @@ AOP的通知类型共5种
 
 4.可以在通知类型注解后添加参数，实现XML配置中的属性，例如after-returning后的returning属性
 
-![31](Spring图片\31.png)
+![31](https://img-blog.csdnimg.cn/58719bc9bb3c4c218484c9a61aafc9cc.png)
 
 #### 4.4 AOP注解详解
 
@@ -2549,7 +2549,7 @@ public class RunTimeMonitorAdvice {
 
 装饰者模式（Decorator Pattern）：在不惊动原始设计的基础上，为其添加功能
 
-![32](Spring图片\32.png)
+![32](https://img-blog.csdnimg.cn/c30d9fbebd2c45a6b2a033049d04a1e3.png)
 
 ```java
 public class UserServiceDecorator implements UserService{
@@ -2602,7 +2602,7 @@ public class UserServiceJDKProxy {
 
 - CGLIB动态代理无需要原始被代理对象，动态创建出新的代理对象
 
-![33](Spring图片\33.png)
+![33](https://img-blog.csdnimg.cn/11864bf4106145d0bfff6b1fdb3bd8f0.png)
 
 ```java
 public class UserServiceImplCglibProxy {
@@ -2655,7 +2655,7 @@ Spirng可以通过配置的形式控制使用的代理形式，默认使用jdkpr
 
 #### **6.5 织入时机**
 
-![34](Spring图片\34.png)
+![34](https://img-blog.csdnimg.cn/6a5670cc0ffb4669aab96ba3c7c682d6.png)
 
 ## 十.spring 事务
 
@@ -2689,17 +2689,17 @@ Spirng可以通过配置的形式控制使用的代理形式，默认使用jdkpr
 
   解决方案： （表级读锁）
 
-![35](Spring图片\35.png)
+![35](https://img-blog.csdnimg.cn/71ec34869c66406b981d7dcd0b1781ed.png)
 
 - 不可重复读：读取过程中单个数据发生了变化
   - 解决方案： Repeatable read （行级写锁）
 
-![36](Spring图片\36.png)
+![36](https://img-blog.csdnimg.cn/6e41b881b9e448e1bba3c56f586fc57a.png)
 
 - 幻读：读取过程中数据条目发生了变化
   - 解决方案： Serializable（表级写锁）
 
-![37](Spring图片\37.png)
+![37](https://img-blog.csdnimg.cn/4e79db97d9e44232bd0e4fa54d178ece.png)
 
 ### 2.事务管理
 
@@ -3086,7 +3086,7 @@ public Object tx(ProceedingJoinPoint pjp) throws Throwable {
 
 
 
-![39](Spring图片\39.png)
+![39](https://img-blog.csdnimg.cn/fa41dc2060c24e8fb49cd2fcb3ddc9bb.png)
 
 #### **2.9 事务传播行为**
 
@@ -3094,13 +3094,13 @@ public Object tx(ProceedingJoinPoint pjp) throws Throwable {
 
 - 事务协调员
 
-![40](Spring图片\40.png)
+![40](https://img-blog.csdnimg.cn/dee5fe4df30c4e3bb87d3fb8ebe826d0.png)
 
 - 事务传播行为描述 的是事务协调员对事务管理员所携带事务的处理态度
 
 #### **2.10 事务传播行为**
 
-![41](Spring图片\41.png)
+![41](https://img-blog.csdnimg.cn/78f40824eef54b95b3315d65ac440b90.png)
 
 #### **2.11 事务传播应用**
 
@@ -3208,7 +3208,7 @@ public Object tx(ProceedingJoinPoint pjp) throws Throwable {
 
 #### 3.1 Spring模块对象
 
-![42](Spring图片\42.png)
+![42](https://img-blog.csdnimg.cn/39b24609dfb145728775b82c4bef5206.png)
 
 - TransactionTemplate
 
@@ -3284,7 +3284,7 @@ redisTemplate.opsForCluster()
 
 
 
-![43](Spring图片\43.png)
+![43](https://img-blog.csdnimg.cn/047c851e5fd94bb5b0559875a5d0c4ee.png)
 
 ```java
 public void changeMoney(Integer id, Double money) {
@@ -3302,9 +3302,9 @@ public Double findMondyById(Integer id) {
 
 策略模式（Strategy Pattern）使用不同策略的对象实现不同的行为方式，策略对象的变化导致行为的变化。
 
-![44](Spring图片\44.png)
+![44](https://img-blog.csdnimg.cn/e055f2c6beb94cc884ec424f2f8d5ef3.png)
 
 策略模式（Strategy Pattern）使用不同策略的对象实现不同的行为方式，策略对象的变化导致行为的变化。
 
-![45](Spring图片\45.png)
+![45](https://img-blog.csdnimg.cn/07e6a4bc8303437db5d67bcb42ffadc2.png)
 
