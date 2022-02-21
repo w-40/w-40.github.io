@@ -55,7 +55,7 @@ Spring是分层的JavaSE/EE应用full-stack（一站式）轻量级开源框架
 
 ### 5.Spring的发展历史
 
-![2](Spring图片/2.png)
+![2](https://gitee.com/wang-zk/campus_dormitory_system/blob/master/images/%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87.jpg)
 
 ### 6.Spring优势
 
