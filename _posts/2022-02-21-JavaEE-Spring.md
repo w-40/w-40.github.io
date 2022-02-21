@@ -97,7 +97,7 @@ rs.close( ) ;
 
 ### 3.工厂模式发展史
 
-![4](Spring图片/4.png)
+![4](https://github.com/w-40/w-40.github.io/blob/main/_posts/Spring%E5%9B%BE%E7%89%87/4.png)
 
 ![5](Spring图片/5.png)
 
