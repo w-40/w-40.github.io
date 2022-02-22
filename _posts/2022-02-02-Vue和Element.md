@@ -15,8 +15,6 @@ tag: 学习笔记
 
 
 
-
-
 # Vue和Element
 
 ## 一.Vue 快速入门
@@ -427,14 +425,25 @@ tag: 学习笔记
 ### 1.Element介绍
 
 - Element：网站快速成型工具。是饿了么公司前端开发团队提供的一套基于Vue的网站组件库。
+
 - 使用Element前提必须要有Vue。
+
 - 组件：组成网页的部件，例如超链接、按钮、图片、表格等等~
+
 - Element官网：https://element.eleme.cn/#/zh-CN
+
+- 自己完成的按钮
+
+  ![](E:\桌面\课程\JavaWeb\Vue图片\我是按钮.png)
+
 - Element 提供的按钮
 
   - 默认按钮、朴素按钮、圆角按钮
   - 主要按钮、成功按钮、信息按钮
   - 警告按钮、危险按钮
+
+
+![](https://img-blog.csdnimg.cn/682e6f2e7dc84234b56597e9c9afbbc3.png)
 
 ### 2.Element快速入门
 
@@ -517,6 +526,8 @@ tag: 学习笔记
 + 12、12
 + 8、8、8
 
+![](https://img-blog.csdnimg.cn/f2222ed9d07a45fb871cabf88b043f23.png)
+
 - **代码实现**
 
   ```html
@@ -592,6 +603,8 @@ tag: 学习笔记
 ### 4.容器布局
 
 将页面分成头部区域、侧边栏区域、主区域、底部区域。
+
+![](https://img-blog.csdnimg.cn/50feb465a9c046fa8b5f68e6dfeaeb89.png)
 
 - **代码实现**
 
@@ -853,6 +866,8 @@ tag: 学习笔记
 
 ### 7.顶部导航栏组件
 
+![](https://img-blog.csdnimg.cn/4d4beb9fef1a45aa85852ad2f7271efa.png)
+
 - **代码实现**
 
   ```html
@@ -903,6 +918,8 @@ tag: 学习笔记
   ```
 
 ### 8.侧边导航栏组件
+
+![](https://img-blog.csdnimg.cn/496c9bffbde542b895df5ba8a1bc8ada.png)
 
 - **代码实现**
 
@@ -988,7 +1005,7 @@ tag: 学习笔记
 
 ### 1.案例效果和分析
 
-​		图略
+![](https://img-blog.csdnimg.cn/47090fac125c4ff082215cc32e306a2a.png)
 
 ### 2.头部区域的实现
 
@@ -1211,7 +1228,7 @@ tag: 学习笔记
 
 - **生命周期**
 
-​		此处图略（可去官网查看）
+![](https://img-blog.csdnimg.cn/68fbc5669e9e420c90da493a5033edbb.png)
 
 
 
@@ -1459,11 +1476,15 @@ tag: 学习笔记
 
 ### 1.效果环境的介绍
 
-​	图略
+![](https://img-blog.csdnimg.cn/6621a349a8bc42c5b227e5cdb5fda4fd.png)
+
+![](https://img-blog.csdnimg.cn/98c252ed40284132a65924ae83365afe.png)
 
 ### 2.登录功能的实现
 
 - **环境搭建**
+
+  - 从当天的资料中解压《学生管理系统原始项目》，并导入。
 
 - **代码实现**
 
