@@ -1,7 +1,7 @@
 ---
 layout: post
 #标题配置
-title: Spring框架
+title: SpringMVC框架
 #时间配置
 date:   2022-03-01 11:23:00 +0800
 #目录配置
