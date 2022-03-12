@@ -5,7 +5,7 @@ title: Zookeeper
 #时间配置
 date:   2022-03-09 21:52:00 +0800
 #目录配置
-categories: 
+categories: 框架
 #标签配置
 tag: 学习笔记
 ---
